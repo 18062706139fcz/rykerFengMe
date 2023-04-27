@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "prettier": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@types/node": "18.16.1",
@@ -29,7 +31,12 @@
     "@commitlint/cli": "^17.6.1",
     "@commitlint/config-conventional": "^17.6.1",
     "cross-env": "^7.0.3",
+    "eslint-plugin-storybook": "^0.6.11",
     "husky": "^8.0.3",
-    "prettier": "^2.8.8"
+    "prettier": "^2.8.8",
+    "storybook": "^7.0.7"
+  },
+  "resolutions": {
+    "webpack": "^5"
   }
 }
